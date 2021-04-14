@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "779801008458",
+    "project_id": "barber1-fd18a",
+    "storage_bucket": "barber1-fd18a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:779801008458:android:810a75924df7fc14ce49b3",
+        "android_client_info": {
+          "package_name": "mx.com.systemjorge.barbershop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "779801008458-4b7v1au0e3int9f0f47d2hlh3lmt5jjq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mx.com.systemjorge.barbershop",
+            "certificate_hash": "01feb3928b403caaa1f603b1089ba1c012fc08a8"
+          }
+        },
+        {
+          "client_id": "779801008458-pa79p2jek9hldhuo0iikkpih28bo15dr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTgm7RQLDSHHvUX48bYbLsnn08uxpPojc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "779801008458-pa79p2jek9hldhuo0iikkpih28bo15dr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

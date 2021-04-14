@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BarberShop</string>
+    <string name="user">Usuario</string>
+    <string name="botonIngresar">Ingresar</string>
+    <string name="bienvenida">Bienvenidos</string>
+    <string name="ver_carrito">Ver Cita</string>
+</resources>
