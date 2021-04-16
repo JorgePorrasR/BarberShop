@@ -9,6 +9,7 @@
 
     <ListView
         android:id="@+id/listCarrito"
+        android:background="@drawable/elfondo"
         android:layout_width="409dp"
         android:layout_height="382dp"
         android:layout_marginStart="1dp"
@@ -24,6 +25,7 @@
 
     <TextView
         android:id="@+id/total"
+        android:textColor="@color/negro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"

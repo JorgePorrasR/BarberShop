@@ -4,10 +4,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/elfondo"
     android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/txtServicio"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/Blanco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -24,6 +28,9 @@
 
     <TextView
         android:id="@+id/txtdescripcion"
+        android:textSize="30dp"
+        android:textColor="@color/Blanco"
+        android:layout_centerVertical="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -39,6 +46,9 @@
 
     <TextView
         android:id="@+id/txtPrecio"
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/Blanco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -58,8 +68,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="173dp"
-        android:layout_marginBottom="169dp"
+        android:layout_marginStart="57dp"
+        android:layout_marginBottom="166dp"
+        android:background="@drawable/dis1"
         android:text="Agregar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
