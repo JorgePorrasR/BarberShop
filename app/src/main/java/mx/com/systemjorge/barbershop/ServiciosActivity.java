@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -26,7 +28,6 @@ import mx.com.systemjorge.barbershop.Providers.ClientProvider;
 
 public class ServiciosActivity extends AppCompatActivity {
     TextView txtUsuario;
-    TextView textView;
     Button botCarrito;
     ListView listaServicios;
     Cliente micliente;
@@ -35,11 +36,11 @@ public class ServiciosActivity extends AppCompatActivity {
     ArrayList<Servicio> listaServicios2;
     ArrayAdapter<Servicio> adaptador;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_servicios);
 
 
@@ -48,10 +49,9 @@ public class ServiciosActivity extends AppCompatActivity {
 
         //mClientProvider = new ClientProvider();
         //micliente = new Cliente();
-        txtUsuario = findViewById(R.id.txtUser);
+        txtUsuario = findViewById(R.id.txtSaludo);
         botCarrito = findViewById(R.id.btnCarrito);
         listaServicios = (ListView) findViewById(R.id.lvlServicios);
-        textView = findViewById(R.id.textView);
         listaServicios2 = new ArrayList<>();
 
 
@@ -99,7 +99,7 @@ public class ServiciosActivity extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 micliente = snapshot.getValue(Cliente.class);
-                    txtUsuario.setText(micliente.nombre);
+                    txtUsuario.setText("¡Hola " + micliente.nombre + "!");
 
                    if (micliente.carrito != null) {
                         botCarrito.setText(getString(R.string.ver_carrito) + " (" + micliente.carrito.size() + ")");

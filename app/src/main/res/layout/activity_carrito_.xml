@@ -1,34 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="@drawable/elfondo"
     tools:context=".carrito_Activity">
 
-    <ListView
-        android:id="@+id/listCarrito"
-        android:background="@drawable/elfondo"
-        android:layout_width="409dp"
-        android:layout_height="382dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.153" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/total"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Servicios"
+                android:textColor="@color/Blanco"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                />
+
+            <ListView
+                android:id="@+id/listCarrito"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@color/Blanco"
+                android:layout_marginBottom="100dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <TextView
         android:id="@+id/total"
-        android:textColor="@color/negro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:text="TextView" />
+        android:text="Total: $180.00"
+        android:textSize="32sp"
+        android:textColor="@color/Blanco"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        />
 
-</LinearLayout>
+</RelativeLayout>
